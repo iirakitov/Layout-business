@@ -1,0 +1,71 @@
+@mixin desktop-1170 () {
+  @media (max-width: $breakpoint_1170) {
+    @content;
+  }
+}
+
+@mixin laptop-1024() {
+  @media (max-width: $breakpoint_1024) {
+    @content;
+  }
+}
+
+@mixin tablet-767() {
+  @media (max-width: $breakpoint_767) {
+    @content;
+  }
+}
+
+@mixin tablet-576() {
+  @media (max-width: $breakpoint_576) {
+    @content;
+  }
+}
+
+@mixin tablet-500() {
+  @media (max-width: $breakpoint_500) {
+    @content;
+  }
+}
+
+@mixin  tablet-450() {
+  @media (max-width: $breakpoint_450) {
+    @content
+  }
+}
+
+@mixin mobile-360() {
+  @media (max-width: $breakpoint_360) {
+    @content;
+  }
+}
+
+@mixin input($source) {
+  @extend %input;
+  &:before {
+    background-image: url($source);
+  }
+}
+
+@mixin btn-slider($btn-cl, $btn-cl-hv) {
+  @extend  %btn-slider;
+  border: 2px solid $btn-cl;
+
+  &:active, &:hover {
+    border: 3px solid $btn-cl-hv;
+  }
+}
+
+@mixin h2-heading () {
+  @extend %for-heading;
+  font-size: $font-size-xl;
+  color: $h2-heading;
+}
+
+@mixin h3-heading () {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: $font-size-md;
+  color: $h2-heading;
+  font-family: $lato-font;
+}

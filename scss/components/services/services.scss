@@ -1,0 +1,59 @@
+.services {
+  padding-top: 203px;
+
+  &__heading {
+    text-align: center;
+  }
+
+  h2 {
+    @include h2-heading ();
+  }
+
+  p {
+    color: $h2-heading;
+  }
+
+  &__blocks {
+    padding-top: 90px;
+  }
+
+  &__block-item {
+    width: 50%;
+    &:nth-of-type(odd) {
+      padding-right: 53px;
+      }
+    &:nth-of-type(even) {
+      padding-left: 53px;
+    }
+    &:nth-child(-n+4) {
+      padding-bottom: 80px;
+    }
+
+  }
+  &__icon {
+    width: 10%;
+
+    span {
+      font-size: $font-size-xxl;
+      color: $font-awesome;
+
+      &:hover {
+        color: $font-awesome-hv;
+      }
+    }
+  }
+
+  &__text {
+    width: 90%;
+    padding-left: 35px;
+
+    h3 {
+      @include h3-heading;
+    }
+
+    p {
+      padding-top: 25px;
+      font-size: $font-size-s;
+    }
+  }
+}

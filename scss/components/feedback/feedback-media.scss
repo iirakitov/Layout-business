@@ -1,0 +1,83 @@
+@include laptop-1024 {
+  .feedback {
+
+    h1 {
+      font-size: $font-size-xl;
+    }
+  }
+}
+
+@include tablet-767 {
+  .feedback {
+    max-height: 855px;
+
+    .row {
+      flex-direction: column;
+    }
+
+    &__form {
+      align-items: center;
+    }
+
+    &__form-item {
+      width: 70%;
+      text-align: center;
+
+      &:nth-child(-n+3) {
+        padding-bottom: 10px;
+      }
+
+      label {
+        padding: 0;
+      }
+
+      input[type='submit'] {
+        width: 70%;
+      }
+    }
+
+    &__slider-btn a {
+      padding: 7px;
+      border: 3px solid $btn-slider-cl;
+    }
+  }
+}
+
+@include tablet-576 {
+  .feedback {
+    max-height: 805px;
+    &__slider img {
+      width: 455px;
+    }
+  }
+}
+
+@include tablet-500 {
+  .feedback {
+    padding-top: 50px;
+
+    &__form-item {
+      width: 100%;
+    }
+
+    &__slider {
+      display: none;
+    }
+
+    &__form {
+      padding: 36px 40px;
+    }
+  }
+}
+
+@include mobile-360 {
+  .feedback {
+    &__heading-text {
+      padding: 0 10px;
+
+      h1 {
+        font-size: $font-size-ll;
+      }
+    }
+  }
+}

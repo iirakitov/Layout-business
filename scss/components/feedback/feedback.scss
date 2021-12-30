@@ -1,0 +1,66 @@
+.feedback {
+  background: $bg-feedback;
+  padding-top: 110px;
+  max-height: 645px;
+
+  &__heading-text {
+    text-align: center;
+
+    h1 {
+      text-transform: uppercase;
+      color: $txt-color-hv-nav;
+      font-size: $font-size-xxl;
+    }
+
+    p {
+      color: $txt-color-hv-nav;
+    }
+  }
+
+  &__form {
+    padding: 36px 40px 0 40px;
+  }
+
+  &__form-item {
+    width: 25%;
+
+    label.feedback__user {
+      @include input("./../images/icons/user.svg");
+    }
+
+    label.feedback__email {
+      @include input("./../images/icons/envelope.svg");
+    }
+
+    label.feedback__phone {
+      @include input("./../images/icons/phone.svg");
+    }
+
+    input[type='submit'] {
+      padding: 14px 0;
+      font-size: $font-size-m;
+      text-transform: uppercase;
+      background: $bg-color-hv-nav;
+      color: $txt-color-hv-nav;
+      border-radius: 5px;
+      width: 100%;
+
+      &:active {
+        box-shadow: inset 3px 3px 6px #191c1a, inset -3px -3px 6px #b18408;
+      }
+    }
+  }
+
+  &__slider {
+    text-align: center;
+    padding-top: 66px;
+  }
+
+  &__pictures img {
+    display: inline;
+  }
+
+  &__slider-btn a {
+    @include btn-slider ($btn-slider-cl, $btn-slider-hov-cl);
+  }
+}

@@ -1,0 +1,44 @@
+body {
+  font-family: $content-font;
+}
+
+.container {
+  max-width: $content-width;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@include desktop-1170 {
+  .container {
+    max-width: $breakpoint_1024;
+  }
+}
+
+@include laptop-1024 {
+  .container {
+    max-width: $breakpoint_767;
+  }
+}
+
+@include tablet-767 {
+  .container {
+    max-width: $breakpoint_576;
+  }
+}
+
+@include tablet-576 {
+  .container {
+    max-width: $breakpoint_500;
+  }
+}
+
+@include tablet-500 {
+  .container {
+    max-width: $breakpoint_450;
+  }
+}
+

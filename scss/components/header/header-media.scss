@@ -1,0 +1,109 @@
+@include laptop-1024 {
+  .header {
+    .row {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__menu-list {
+      padding: 0;
+    }
+
+    &__menu-list a {
+      font-size: 13px;
+      letter-spacing: 0.5px;
+      padding: 10px 14px;
+    }
+  }
+}
+
+@include tablet-767 {
+  .header {
+    padding-bottom: 10px;
+
+    .row {
+      flex-direction: row;
+    }
+
+    &__burger-menu {
+      position: relative;
+    }
+
+    input {
+      width: 30px;
+    }
+
+    &__menu-btn {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      width: 100%;
+      height: 35px;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    span, span:before, span:after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background: $txt-color-nav;
+    }
+
+    span:before {
+      content: '';
+      top: -8px;
+    }
+
+    span:after {
+      content: '';
+      top: 8px;
+    }
+
+    &__menu-list {
+      flex-direction: column;
+      position: fixed;
+      visibility: hidden;
+      top: 0;
+      width: 200px;
+      height: 100%;
+      margin: 0;
+      padding: 80px 0;
+      background: $bg-menu-burger;
+    }
+
+    input:checked ~ &__menu-btn > span {
+      transform: rotate(45deg);
+    }
+
+    a {
+      font-size: 14px;
+      width: 100%;
+    }
+
+    input:checked ~ &__menu-btn > span:before {
+      top: 0;
+      transform: rotate(0);
+    }
+
+    input:checked ~ &__menu-btn > span:after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+
+    input:checked ~ &__menu-list {
+      visibility: visible;
+      right: 0;
+      z-index: 1;
+    }
+  }
+}
+
+@include tablet-576 {
+  .header {
+    .row {
+      padding: 0 30px;
+    }
+  }
+}

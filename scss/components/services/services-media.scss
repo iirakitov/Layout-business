@@ -1,0 +1,40 @@
+@include tablet-767 {
+  .services {
+     &__block-item {
+      flex-direction: column;
+
+       div {
+         width: 100%;
+         padding-left: 0;
+         text-align: center;
+       }
+    }
+
+    &__text {
+      padding-top: 10px;
+    }
+  }
+}
+
+@include  tablet-500 {
+  .services {
+    padding-top: 100px;
+  }
+}
+
+@include tablet-450 {
+  .services {
+    &__blocks {
+      flex-direction: column;
+    }
+
+    &__block-item {
+      width: 100%;
+      padding: 0 !important;
+
+      &:not(last-child) {
+        padding-bottom: 20px !important;
+      }
+    }
+  }
+}
