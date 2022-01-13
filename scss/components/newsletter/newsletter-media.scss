@@ -1,0 +1,52 @@
+@include laptop-1024 {
+  .newsletter {
+    &__form {
+      flex-direction: column;
+      align-items: center;
+
+      div {
+        width: 80%;
+      }
+    }
+
+    &__form-item-email {
+      margin: 10px 0;
+    }
+  }
+}
+
+@include tablet-767 {
+  .newsletter {
+    &__form {
+      padding: 40px 44px 0;
+    }
+  }
+}
+
+@include tablet-450 {
+  .newsletter {
+    &__heading {
+      p {
+        font-size: $font-size-m;
+      }
+    }
+
+    &__form {
+      padding: 40px 0;
+
+      div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include mobile-360 {
+  .newsletter {
+    &__form {
+      div {
+        width: 70%;
+      }
+    }
+  }
+}

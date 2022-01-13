@@ -1,0 +1,85 @@
+.how-it-works {
+  padding: 155px 0 149px;
+
+  &__heading {
+    text-align: center;
+
+    h2 {
+      @include h2-heading($h2-heading);
+    }
+
+    p {
+      color: $h2-heading;
+    }
+  }
+
+  &__steps {
+    padding-top: 78px;
+    .row {
+      justify-content: space-around;
+    }
+  }
+
+  &__step {
+    @include steps;
+    position: relative;
+
+    h3 {
+      @include h3-heading;
+    }
+  }
+
+  &__step:first-child:after {
+    background: url("./../images/how-it-works/arrow-left-up.svg") left,
+    url("./../images/how-it-works/arc-up.svg") top,
+    url("./../images/how-it-works/arrow-right-up.svg") right;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 126px;
+    height: 53px;
+    right: -21%;
+    top: 0;
+  }
+
+  &__step:nth-child(2):after {
+    background: url("./../images/how-it-works/arrow-left-down.svg") left,
+    url("./../images/how-it-works/arc-down.svg") bottom,
+    url("./../images/how-it-works/arrow-right-down.svg") right;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 126px;
+    height: 53px;
+    left: 78%;
+    top: 40%
+  }
+
+  &__step:nth-child(3):after {
+    background: url("./../images/how-it-works/arrow-left-up.svg") left,
+    url("./../images/how-it-works/arc-up.svg") top,
+    url("./../images/how-it-works/arrow-right-up.svg") right;
+    content: '';
+    position: absolute;
+    background-repeat: no-repeat;
+    width: 126px;
+    height: 53px;
+    right: -21%;
+    top: 0;
+  }
+
+  &__btn {
+    text-align: center;
+    padding-top: 95px;
+    a {
+      display: inline-block;
+      background: $bg-color-hv-nav;
+      padding: 15px 27px;
+      text-transform: uppercase;
+      color: $txt-color-hv-nav;
+      text-decoration: none;
+      font-family: $lato-font;
+      border-radius: 5px;
+    }
+  }
+}

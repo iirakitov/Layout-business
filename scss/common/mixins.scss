@@ -56,10 +56,10 @@
   }
 }
 
-@mixin h2-heading () {
+@mixin h2-heading ($color) {
   @extend %for-heading;
-  font-size: $font-size-xl;
-  color: $h2-heading;
+  font-size: $font-size-ll;
+  color: $color;
 }
 
 @mixin h3-heading () {
@@ -68,4 +68,132 @@
   font-size: $font-size-md;
   color: $h2-heading;
   font-family: $lato-font;
+}
+
+@mixin plan-item () {
+  @extend %plan-item;
+  font-family: $lato-font;
+  border: 1px solid $border-plans-block;
+  background: $txt-color-hv-nav;
+
+  &:hover {
+    background: $font-awesome;
+
+    h4 {
+      color: $txt-color-hv-nav ;
+    }
+
+    .prices__price {
+      p {
+        color: $txt-color-hv-nav !important;
+      }
+    }
+  }
+
+  .prices__price {
+    border-bottom: 1px solid $inner-border-plans;
+
+    p {
+      color: $bg-color-hv-nav;
+      font-size: $font-size-xxl;
+
+      &:first-child {
+        font-size: $font-size-ll ;
+      }
+
+      &:last-child {
+        color: $text-plans-cl;
+      }
+    }
+  }
+
+  h4 {
+    font-size: $font-size-ml;
+    color: $text-plans-cl;
+  }
+
+  .prices__serv {
+    p {
+      color: $plans-text-cl-serv;
+
+      &:not(:last-child) {
+        border-bottom: 1px solid $inner-border-plans;
+      }
+    }
+  }
+
+  .prices__plans-btn {
+    a {
+      background: $bg-color-hv-nav;
+      color: $txt-color-hv-nav;
+    }
+  }
+}
+
+@mixin steps () {
+  text-align: center;
+  width: 25%;
+
+  &:first-child {
+    padding: 37px 46px 0 30px;
+  }
+
+  &:nth-child(n+2):nth-child(-n+3) {
+    padding: 37px 46px 0;
+  }
+
+  &:last-child {
+    padding: 37px 30px 0 46px;
+  }
+
+  .how-it-works__icon {
+    span {
+      font-size: 72px;
+      color: $font-awesome;
+    }
+  }
+
+  .how-it-works__step-heading {
+    padding-top: 100px;
+
+    p {
+      padding-top: 30px;
+      font-size: $font-size-s;
+      color: $text-plans-cl;
+    }
+  }
+}
+
+@mixin clients () {
+  @extend %clients;
+  background: $txt-color-hv-nav;
+
+  .happy-clients__quote {
+
+    blockquote {
+      font-size: $font-size-s;
+      color: $h2-heading;
+    }
+
+    p {
+
+      &:before {
+        font-size: $font-size-ll;
+      }
+
+      &:after {
+        font-size: $font-size-ll;
+      }
+    }
+
+    figcaption {
+      font-family: $lato-font;
+      font-size: $font-size-m;
+      color: $font-awesome-hv;
+
+      span {
+        color: $happy-clients-quote;
+      }
+    }
+  }
 }

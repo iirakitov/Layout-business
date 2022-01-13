@@ -107,3 +107,11 @@
     }
   }
 }
+
+@include tablet-450 {
+  .header {
+    .row {
+      padding: 0 10px;
+    }
+  }
+}

@@ -1,3 +1,15 @@
+@include laptop-1024 {
+  .services {
+    &__icon {
+      width: 15%;
+    }
+
+    &__text {
+      width: 85%;
+    }
+  }
+}
+
 @include tablet-767 {
   .services {
      &__block-item {
@@ -34,6 +46,12 @@
 
       &:not(last-child) {
         padding-bottom: 20px !important;
+      }
+    }
+
+    &__text {
+      p {
+        font-size: $font-size-md;
       }
     }
   }

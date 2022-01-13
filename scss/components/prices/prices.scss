@@ -1,0 +1,26 @@
+.prices {
+  padding: 136px 0 195px;
+  background: $bg-plans;
+
+  &__plans {
+    padding-top: 83px;
+  }
+
+  &__heading {
+    text-align: center;
+
+    h2 {
+      @include h2-heading($h2-heading);
+    }
+
+    p {
+      color: $h2-heading;
+    }
+  }
+
+  &__plans-item {
+    width: calc(100% / 3);
+    @include plan-item;
+  }
+
+}

@@ -42,3 +42,8 @@ body {
   }
 }
 
+@include tablet-450 {
+  .container {
+    max-width: $breakpoint_360;
+  }
+}

@@ -1,0 +1,50 @@
+.about-us {
+  padding-top: 160px;
+
+  &__wrapper {
+    background: $bg-about-us;
+    position: relative;
+  }
+
+  &__background {
+    background-image: url("./../images/about-us/layer27.png");
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    left: 0;
+    position: absolute;
+  }
+
+  &__bg-picture, &__info {
+    width: 50%;
+  }
+
+  &__info {
+    padding-left: 79px;
+
+    h2 {
+      @include h2-heading($txt-color-hv-nav);
+      padding-top: 160px;
+    }
+
+    p {
+      padding-top: 30px;
+      font-size: $font-size-s;
+      color: $txt-color-hv-nav;
+    }
+  }
+
+  &__btn {
+    padding: 35px 0 174px 0;
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $txt-color-hv-nav;
+      padding: 16px 31px;
+      border: 1px solid $border-btn;
+      border-radius: 5px;
+    }
+  }
+}

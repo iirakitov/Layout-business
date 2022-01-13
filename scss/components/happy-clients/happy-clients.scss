@@ -1,0 +1,29 @@
+.happy-clients {
+  padding: 142px 0 160px 0;
+  background: $bg-about-us;
+  line-height: 25px;
+
+  .row {
+    margin: -10px -19px;
+  }
+
+  &__heading {
+    text-align: center;
+
+    h2 {
+      @include h2-heading($txt-color-hv-nav);
+    }
+
+    p {
+      color: $txt-color-hv-nav;
+    }
+  }
+
+  &__clients {
+    padding-top: 60px;
+  }
+
+  &__clients-item {
+    @include clients;
+  }
+}

@@ -1,0 +1,63 @@
+@include desktop-1170 {
+  .happy-clients {
+    &__quote {
+      padding-left: 25px;
+    }
+  }
+}
+
+@include laptop-1024 {
+  .happy-clients {
+    &__clients-item {
+      .happy-clients__quote {
+        .happy-clients__position {
+          display: block;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@include tablet-767 {
+  .happy-clients {
+    .row {
+      flex-direction: column;
+      margin: -10px 0;
+    }
+
+    &__clients-item {
+      width: 100%;
+      pointer-events: none;
+      margin: 10px 0;
+
+      .happy-clients__quote {
+        .happy-clients__position {
+          display: inline;
+          padding-left: 5px;
+        }
+      }
+    }
+  }
+}
+
+@include tablet-500 {
+  .happy-clients {
+    &__clients-item {
+      .happy-clients__quote{
+        .happy-clients__position {
+          display: block;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+@include mobile-360 {
+  .happy-clients {
+    &__clients {
+      padding: 60px 10px 0;
+    }
+  }
+}

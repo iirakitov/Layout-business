@@ -6,7 +6,7 @@
   }
 
   h2 {
-    @include h2-heading ();
+    @include h2-heading ($h2-heading);
   }
 
   p {
@@ -32,6 +32,7 @@
   }
   &__icon {
     width: 10%;
+    text-align: center;
 
     span {
       font-size: $font-size-xxl;
