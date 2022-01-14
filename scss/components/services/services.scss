@@ -49,7 +49,7 @@
     padding-left: 35px;
 
     h3 {
-      @include h3-heading;
+      @include h3-heading ($h2-heading);
     }
 
     p {

@@ -62,11 +62,11 @@
   color: $color;
 }
 
-@mixin h3-heading () {
+@mixin h3-heading ($color) {
   font-weight: 900;
   text-transform: uppercase;
   font-size: $font-size-md;
-  color: $h2-heading;
+  color: $color;
   font-family: $lato-font;
 }
 

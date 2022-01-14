@@ -1056,5 +1056,56 @@ body {
     width: 70%;
   }
 }
+.map {
+  padding-top: 55px;
+}
+.map__wrapper {
+  position: relative;
+  background-image: url("./../images/map/map.png");
+  min-height: 545px;
+}
+.map__contacts {
+  width: 279px;
+  height: 279px;
+  position: absolute;
+  top: 40px;
+  left: 35%;
+  background: #394b50;
+  border-radius: 50%;
+  text-align: center;
+  padding: 65px 68px 0;
+}
+.map__contacts:after {
+  content: "";
+  position: absolute;
+  border: 20px solid transparent;
+  border-top: 30px solid #394b50;
+  bottom: -36px;
+  right: 119px;
+}
+.map__contacts h3 {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #ffffff;
+  font-family: "Lato", sans-serif;
+}
+.map__contacts address {
+  padding-top: 15px;
+  font-size: 14px;
+  color: #99a9ae;
+  font-style: inherit;
+}
+.map__contacts span {
+  font-size: 14px;
+  color: #99a9ae;
+}
+.map__contacts a {
+  text-decoration: none;
+  color: #99a9ae;
+}
+.map__email a {
+  color: #e7ad48;
+}
 
 /*# sourceMappingURL=styles.css.map */

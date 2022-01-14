@@ -1,0 +1,57 @@
+.map {
+  padding-top: 55px;
+
+  &__wrapper {
+    position: relative;
+    background-image: url("./../images/map/map.png");
+    min-height: 545px;
+  }
+
+  &__contacts {
+    width: 279px;
+    height: 279px;
+    position: absolute;
+    top: 40px;
+    left: 35%;
+    background: $h2-heading;
+    border-radius: 50%;
+    text-align: center;
+    padding: 65px 68px 0;
+
+    &:after {
+      content: '';
+      position: absolute;
+      border: 20px solid transparent;
+      border-top: 30px solid $h2-heading;
+      bottom: -36px;
+      right: 119px;
+    }
+
+    h3 {
+      @include h3-heading($txt-color-hv-nav);
+    }
+
+    address {
+      padding-top: 15px;
+      font-size: $font-size-m;
+      color: $happy-clients-quote;
+      font-style: inherit;
+    }
+
+    span {
+      font-size: $font-size-m;
+      color: $happy-clients-quote;
+    }
+
+    a {
+      text-decoration: none;
+      color: $happy-clients-quote;
+    }
+  }
+
+  &__email {
+    a {
+      color: $border-btn;
+    }
+  }
+}
