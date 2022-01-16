@@ -1,0 +1,29 @@
+@include desktop-1170 {
+  .map {
+    &__wrapper {
+      background-repeat: no-repeat;
+      background-size: 1024px;
+    }
+  }
+}
+
+@include laptop-1024 {
+  .map {
+    &__wrapper {
+      background-size: 767px;
+    }
+  }
+}
+
+@include  tablet-767 {
+  .map {
+    &__wrapper {
+      background-image: none;
+      min-height: 450px;
+    }
+
+    &__logo {
+      top: 77%;
+    }
+  }
+}

@@ -1,10 +1,13 @@
 .map {
-  padding-top: 55px;
+  padding: 55px 0 60px;
+  border-bottom: 1px solid $border-plans-block;
 
   &__wrapper {
     position: relative;
     background-image: url("./../images/map/map.png");
-    min-height: 545px;
+    min-height: 600px;
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   &__contacts {
@@ -12,7 +15,8 @@
     height: 279px;
     position: absolute;
     top: 40px;
-    left: 35%;
+    left: 50%;
+    transform: translate(-50%);
     background: $h2-heading;
     border-radius: 50%;
     text-align: center;
@@ -53,5 +57,12 @@
     a {
       color: $border-btn;
     }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 58%;
   }
 }

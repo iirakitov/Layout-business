@@ -44,6 +44,7 @@
 
   &:hover {
     transform: scale(1.1);
+    transition: .3s;
   }
 
   .prices__price {

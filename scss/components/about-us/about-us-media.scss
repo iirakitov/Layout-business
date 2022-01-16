@@ -1,0 +1,21 @@
+@include tablet-767 {
+  .about-us {
+    &__bg-picture {
+      display: none;
+    }
+
+    &__info {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+  }
+}
+
+@include mobile-360 {
+  .about-us {
+    &__info {
+      padding: 0 15px;
+    }
+  }
+}

@@ -119,6 +119,7 @@ input[type=submit] {
 }
 .prices__plans-item:hover {
   transform: scale(1.1);
+  transition: 0.3s;
 }
 .prices__plans-item .prices__price {
   padding: 35px 0 33px 0;
@@ -631,6 +632,21 @@ body {
   border-radius: 5px;
 }
 
+@media (max-width: 767px) {
+  .about-us__bg-picture {
+    display: none;
+  }
+  .about-us__info {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+}
+@media (max-width: 360px) {
+  .about-us__info {
+    padding: 0 15px;
+  }
+}
 .prices {
   padding: 136px 0 195px;
   background: #e7edf3;
@@ -1057,19 +1073,23 @@ body {
   }
 }
 .map {
-  padding-top: 55px;
+  padding: 55px 0 60px;
+  border-bottom: 1px solid #ccd5df;
 }
 .map__wrapper {
   position: relative;
   background-image: url("./../images/map/map.png");
-  min-height: 545px;
+  min-height: 600px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 .map__contacts {
   width: 279px;
   height: 279px;
   position: absolute;
   top: 40px;
-  left: 35%;
+  left: 50%;
+  transform: translate(-50%);
   background: #394b50;
   border-radius: 50%;
   text-align: center;
@@ -1106,6 +1126,99 @@ body {
 }
 .map__email a {
   color: #e7ad48;
+}
+.map__logo {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 58%;
+}
+
+@media (max-width: 1170px) {
+  .map__wrapper {
+    background-repeat: no-repeat;
+    background-size: 1024px;
+  }
+}
+@media (max-width: 1024px) {
+  .map__wrapper {
+    background-size: 767px;
+  }
+}
+@media (max-width: 767px) {
+  .map__wrapper {
+    background-image: none;
+    min-height: 450px;
+  }
+  .map__logo {
+    top: 77%;
+  }
+}
+.footer {
+  position: relative;
+}
+.footer__menu {
+  justify-content: center;
+  padding: 0;
+}
+.footer__menu li {
+  list-style: none;
+}
+.footer__menu a {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  color: #394b50;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+}
+.footer__phone {
+  text-align: center;
+}
+.footer__phone a {
+  font-size: 22px;
+  color: #394b50;
+  text-decoration: none;
+}
+.footer__phone span:last-child {
+  padding: 0 5px;
+}
+.footer__phone span:first-child {
+  transform: rotate(90deg) translate(0, 15px);
+}
+.footer__social-media {
+  padding: 25px 0 50px;
+}
+.footer__social-media ul {
+  padding: 0;
+  justify-content: center;
+}
+.footer__social-media li {
+  list-style: none;
+}
+.footer__social-media a {
+  text-decoration: none;
+  padding: 0 10px;
+  font-size: 18px;
+  color: #709dca;
+}
+.footer__social-media a:hover {
+  color: #ffbb42;
+}
+.footer__copyright {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: #709dca;
+}
+.footer__copyright p {
+  text-align: center;
+  color: #ffffff;
+  font-size: 13px;
+  padding: 15px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
